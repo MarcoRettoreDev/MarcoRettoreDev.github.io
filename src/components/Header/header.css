@@ -1,0 +1,57 @@
+.header__h1
+{
+  font-size: 5.2rem;
+}
+
+.header__h2
+{
+  font-size: 4.0rem;
+}
+
+.header__h3
+{
+  font-size: 2.0rem;
+}
+
+.header__text-developer
+{
+  font-size: .8rem;
+  display:block;
+}
+
+.header__wrapper
+{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  min-height: 30vh;
+
+  color: var(--grey-light);
+  font-style: var(--title-font);
+
+  background-color: var(--dark-light);
+}
+
+.header__text-wrapper
+{
+  width: 35%;
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.header__img-wrapper
+{
+  width: 55%;
+}
+
+.header__img-wrapper img
+{
+  width: 100%;
+  border-radius: 50%;
+}
+
+
