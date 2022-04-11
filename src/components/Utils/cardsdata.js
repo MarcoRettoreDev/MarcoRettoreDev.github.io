@@ -9,6 +9,7 @@ const cardData = () =>
       imgurl: 'https://i.ibb.co/N14h1cw/Rick-and-morty-png-circle.png',
       iconReact: true,
       iconJs: true,
+      iconCss: true,
       iconGithub: true,
       iconDeploy: true,
       githubURL: 'https://github.com/MarcoRettoreDev/RickandMortyProject',
@@ -16,7 +17,7 @@ const cardData = () =>
     }, {
       title: "Todo App",
       description: "A basic todo app, made using: uselocalstorage, react portals, useeffect & state, react context",
-      imgurl: '#',
+      imgurl: 'https://i.ibb.co/GV1s1zF/Todo-Light-Img.png',
       iconReact: true,
       iconJs: true,
       iconCss:true,
@@ -27,7 +28,7 @@ const cardData = () =>
     }, {
       title: "Coportative page",
       description: "A static web project, rwd practicing and styling mobile first",
-      imgurl: "#",
+      imgurl: "https://i.ibb.co/tZ4n56V/bitcoinbaby-1-2x.png",
       iconReact: false,
       iconJs: false,
       iconHtml: true,
@@ -38,12 +39,13 @@ const cardData = () =>
       deployURL: "https://marcorettoredev.github.io/webpage-rwd/"
     }, {
       title: "Math Project",
-      description: "My first mini web-app with tools to maths calc such as: mean median and mode, discounts, etc.",
-      imgurl: '#',
+      description: "My first mini web-app with tools to do some maths calculations ",
+      imgurl: 'https://i.ibb.co/HBn4nMN/Mathwallpaper.jpg',
       iconReact: false,
       iconJs: true,
       iconJs: true,
       iconHtml: true,
+      iconCss: true,
       iconGithub: true,
       iconDeploy: true,
       githubURL: 'https://github.com/MarcoRettoreDev/MathProyect',

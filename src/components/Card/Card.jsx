@@ -1,53 +1,62 @@
 import './card.css';
-
-import { ReactComponent as IconReact } from '../../icons/iconReact.svg';
-import { ReactComponent as IconJavascript } from '../../icons/iconJavascript.svg';
-import { ReactComponent as IconGithub } from '../../icons/iconGithubBlack.svg';
+import { React } from 'react';
 import { ReactComponent as IconOpenLink }  from '../../icons/iconOpenLink.svg';
-
+import { ReactComponent as IconGithub }  from '../../icons/iconGithubBlack.svg';
 import { ReactComponent as IconNextpage } from '../../icons/iconNextpage.svg';
 
-const Card = ({ data }) =>
+import { VerifyIconReact } from '../../icons/VerifyIconReact';
+import { VerifyIconJs } from '../../icons/VerifyIconJs';
+import { VerifyIconHtml } from '../../icons/VerifyIconHtml';
+import { VerifyIconCss } from '../../icons/VerifyIconCss';
+
+const Card = ({ title ,imgurl, description, deployURL, githubURL , iconReact , iconJs, iconCss, iconHtml}) =>
 {
-  console.log(data)
+
   return(
-    <section className="cards__card-wrapper">
+    <section className="cards__card-wrapper" >
       <div className="card__img-wrapper">
-        <img src={data[0].imgurl} alt="Logo rick and morty" />
+        <img src={imgurl} alt="Logo rick and morty" />
       </div>
       <div className="card__text-wrapper">
         <div className="card__text-header">
-          <h4>{data[0].title}</h4>
-          <p className='card__text-description'>{data[0].description}</p>
+          <h4>{title}</h4>
+          <p className='card__text-description'>{description}</p>
           <p>Built with:</p>
         </div>
         <div className='card__icons-wrapper'>
-          <div className="icons__icon-wrapper">
-            <div className="svg-wrapper">
-              <IconReact/>
-            </div>
+          <div className="card_icons_skills">
+            <VerifyIconReact
+            react = {iconReact}
+            />          
+            <VerifyIconJs
+            javascript={ iconJs }
+            />
+            <VerifyIconHtml
+              iconHtml={iconHtml}
+            />
+            <VerifyIconCss
+              iconCss={iconCss}
+            />
           </div>
-          <div className="icons__icon-wrapper">
-            <div className="svg-wrapper">
-              <IconJavascript/>
-            </div>
-          </div>
-          <a href={data[0].githubURL} target='_blank'>
-            <div className="icons__icon-wrapper">
-              <div className="svg-wrapper">
-                <IconGithub/>
+
+          <div className='card_icons-git-deploy'>
+            <a href={githubURL} target='_blank'>
+              <div className="icons__icon-wrapper">
+                <div className="svg-wrapper">
+                  <IconGithub/>
+                </div>
+                Repo
               </div>
-              Repo
-            </div>
-          </a>
-          <a href={data[0].deployURL} target='_blank'>
-            <div className="icons__icon-wrapper">
-              <div className="svg-wrapper">
-                <IconOpenLink/>
+            </a>
+            <a href={deployURL} target='_blank'>
+              <div className="icons__icon-wrapper">
+                <div className="svg-wrapper">
+                  <IconOpenLink/>
+                </div>
+                Deploy
               </div>
-              Deploy
-            </div>
-          </a>
+            </a>
+          </div>          
         </div>
       </div>
     </section>
