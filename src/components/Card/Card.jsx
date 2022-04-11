@@ -1,42 +1,56 @@
 import './card.css';
-import ricknMortyLogo from '../../images/Rick and morty-png-circle.png'
-import iconReact from '../../icons/iconReact.svg';
-import iconJavascript from '../../icons/iconJavascript.svg';
-import iconGithub from '../../icons/iconGithubBlack.svg';
-import iconOpenLink from '../../icons/iconOpenLink.svg';
 
-import iconNextpage from '../../icons/iconNextpage.svg';
-const Card = () =>
+import { ReactComponent as IconReact } from '../../icons/iconReact.svg';
+import { ReactComponent as IconJavascript } from '../../icons/iconJavascript.svg';
+import { ReactComponent as IconGithub } from '../../icons/iconGithubBlack.svg';
+import { ReactComponent as IconOpenLink }  from '../../icons/iconOpenLink.svg';
+
+import { ReactComponent as IconNextpage } from '../../icons/iconNextpage.svg';
+
+const Card = ({ data }) =>
 {
+  console.log(data)
   return(
-    <div className="cards__card-wrapper">
+    <section className="cards__card-wrapper">
       <div className="card__img-wrapper">
-        <img src={ricknMortyLogo} alt="Logo rick and morty" />
+        <img src={data[0].imgurl} alt="Logo rick and morty" />
       </div>
       <div className="card__text-wrapper">
         <div className="card__text-header">
-          <h4>Rick and Morty App</h4>
-          <p>Mini-app that show you the characters info of the rick and morty series</p>
+          <h4>{data[0].title}</h4>
+          <p className='card__text-description'>{data[0].description}</p>
           <p>Built with:</p>
         </div>
         <div className='card__icons-wrapper'>
           <div className="icons__icon-wrapper">
-              <img src={iconReact} alt="React icon" />
+            <div className="svg-wrapper">
+              <IconReact/>
+            </div>
           </div>
           <div className="icons__icon-wrapper">
-            <img src={iconJavascript} alt="Javascript icon" />
+            <div className="svg-wrapper">
+              <IconJavascript/>
+            </div>
           </div>
-          <div className="icons__icon-wrapper">
-            <img src={iconGithub} alt="Github icon" />
-            <p>Repo</p>
-          </div>
-          <div className="icons__icon-wrapper">
-            <img src={iconOpenLink} alt="Openlink icon" />
-            <p>Deploy</p>
-          </div>
+          <a href={data[0].githubURL} target='_blank'>
+            <div className="icons__icon-wrapper">
+              <div className="svg-wrapper">
+                <IconGithub/>
+              </div>
+              Repo
+            </div>
+          </a>
+          <a href={data[0].deployURL} target='_blank'>
+            <div className="icons__icon-wrapper">
+              <div className="svg-wrapper">
+                <IconOpenLink/>
+              </div>
+              Deploy
+            </div>
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
