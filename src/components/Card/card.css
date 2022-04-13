@@ -3,13 +3,14 @@
 {
   width: 90%;
   max-width: 500px;
-  min-height: 20vh;
+  height: 200px;
   margin:0 auto;
   display: flex;
 
   border: 1px solid grey;
   border-radius: 15px;
   margin: 2rem auto;
+
 }
 
 /* Img */
@@ -29,7 +30,6 @@
 .card__text-wrapper
 {
   width: 50%;
-  font-size: var(--tiny-font-size);
   padding: .5em 1em;
 }
 
@@ -40,7 +40,12 @@
   flex-direction: column;
   justify-content: space-evenly;
 
-  font-size: 1rem;
+  font-size: var(--small-font-size);
+}
+
+.card__text-header h4
+{
+  font-size: var(--normal-font-size);
 }
 
 .card__icons-wrapper /* Icons container */
@@ -48,7 +53,7 @@
   height: 50%;
   display:flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 

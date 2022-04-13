@@ -17,7 +17,7 @@ const cardData = () =>
     }, {
       title: "Todo App",
       description: "A basic todo app, made using: uselocalstorage, react portals, useeffect & state, react context",
-      imgurl: 'https://i.ibb.co/GV1s1zF/Todo-Light-Img.png',
+      imgurl: 'https://i.ibb.co/T88XxFH/Todo-Light-Img-no-bg.png',
       iconReact: true,
       iconJs: true,
       iconCss:true,
@@ -40,7 +40,7 @@ const cardData = () =>
     }, {
       title: "Math Project",
       description: "My first mini web-app with tools to do some maths calculations ",
-      imgurl: 'https://i.ibb.co/HBn4nMN/Mathwallpaper.jpg',
+      imgurl: 'https://i.ibb.co/2jsjdZ2/Math-calcs-wallpaper.jpg',
       iconReact: false,
       iconJs: true,
       iconJs: true,

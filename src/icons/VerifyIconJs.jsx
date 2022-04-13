@@ -3,7 +3,6 @@ import React from "react"
 
 const VerifyIconJs = ({ javascript }) =>
 {
-  console.log(javascript)
   switch(javascript)
   {
     case true:

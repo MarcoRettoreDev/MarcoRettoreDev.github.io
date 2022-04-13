@@ -23,8 +23,8 @@
   --grey-heavy: #A2A2A2;
 
   /* Font Style*/
-  --title-font: 'IBM Plex Sans', sans-serif;
-  --text-font: 'Graduate', cursive;
+  --title-font: 'Graduate', cursive;
+  --text-font: 'IBM Plex Sans', sans-serif;
 }
 
 /* Gral config */

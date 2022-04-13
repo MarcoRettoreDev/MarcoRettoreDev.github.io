@@ -33,6 +33,15 @@
   background-color: var(--dark-light);
 }
 
+.header__content-wrapper
+{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
 .header__text-wrapper
 {
   width: 35%;
@@ -46,6 +55,7 @@
 .header__img-wrapper
 {
   width: 55%;
+  max-width: 250px;
 }
 
 .header__img-wrapper img
