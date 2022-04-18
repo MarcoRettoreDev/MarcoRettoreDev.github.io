@@ -17,6 +17,9 @@ const Card = ({ title ,imgurl, description, deployURL, githubURL , iconReact , i
       <div className="card__img-wrapper">
         <img src={imgurl} alt="Logo rick and morty" />
       </div>
+      <div className="card__button-info" onClick={"mostrar info"}>
+        <div id="card-button-info" > Info</div>
+      </div>
       <div className="card__text-wrapper">
         <div className="card__text-header">
           <h4>{title}</h4>

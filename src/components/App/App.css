@@ -25,6 +25,10 @@
   /* Font Style*/
   --title-font: 'Graduate', cursive;
   --text-font: 'IBM Plex Sans', sans-serif;
+
+  /* Z index */
+
+  --z-off-canvas: 99;
 }
 
 /* Gral config */
